@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- <script type="module" src="./index.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to SWFWMD Permitting</h1>
+    <div class="permit-form">
+        <form action="http://localhost:3000/users_permit" method="post">
+            <label>Username: </label>
+            <input type="text" name="username" placeholder="Enter username">
+            <label>Location: </label>
+            <input type="text" name="address" placeholder="Street, City, State, Zip Code">
+            <input type="submit" value="Get permit">
+        </form>
+    </div>
+    <div class="permit-types">
+        <form action="" method="get">
+            <label>Choose permit type:</label>
+            <select id="permit-select" name="permit_id"></select>
+            <input type="submit" value="Select">
+        </form>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
